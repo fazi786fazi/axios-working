@@ -15,12 +15,13 @@ function App() {
   //     .catch((error) => setMyError(error.message))
   // });
  
-  // using async await method 
+  // using async await method working below here
   
 
   let apidata = async()=>{
 
     // if show errror then use try catch 
+
     try {
       const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
       setMyData(res.data);
